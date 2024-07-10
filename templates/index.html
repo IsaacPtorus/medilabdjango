@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>MyDawa Medical Clinic</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'templates/assets/img/gallery/med2.jpeg' %}" rel="icon">
+  <link href="{% static 'templates/assets/img/gallery/med5.jpeg' %}" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com' %}" rel="preconnect">
+  <link href="https://fonts.gstatic.com' %}" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">' %}
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'templates/assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'templates/assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'templates/assets/vendor/aos/aos.css" rel="stylesheet' %}">
+  <link href="{% static 'templates/assets/vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet">
+  <link href="{% static 'templates/assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'templates/assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="{% static 'templates/assets/css/main.css' %} " rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Medilab
+  * Template URL: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/
+  * Updated: Jun 04 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header sticky-top">
+
+    <div class="topbar d-flex align-items-center">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">mydawamedlab@hotline.com</a></i>
+          <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
+        </div>
+        <div class="social-links d-none d-md-flex align-items-center">
+          <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div><!-- End Top Bar -->
+
+    <div class="branding d-flex align-items-center">
+
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center me-auto">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.png" alt=""> -->
+          <h1 class="sitename">MyDawa Med Lab</h1>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="#about" class="active">Home<br></a></li>
+            <li><a href={% url 'about' %}>About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#departments">Departments</a></li>
+            <li><a href={% url 'doctors' %}>Doctors</a></li>
+            <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#">Dropdown 1</a></li>
+                <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                  <ul>
+                    <li><a href="#">Deep Dropdown 1</a></li>
+                    <li><a href="#">Deep Dropdown 2</a></li>
+                    <li><a href="#">Deep Dropdown 3</a></li>
+                    <li><a href="#">Deep Dropdown 4</a></li>
+                    <li><a href="#">Deep Dropdown 5</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Dropdown 2</a></li>
+                <li><a href="#">Dropdown 3</a></li>
+                <li><a href="#">Dropdown 4</a></li>
+              </ul>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+        <a class="cta-btn d-none d-sm-block" href="#appointment">Make an Appointment</a>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+
+      <img src="{% static 'templates/assets/img/hero-bg.jpg' %}" alt="" data-aos="fade-in">
+
+      <div class="container position-relative">
+
+        <div class="welcome position-relative" data-aos="fade-down" data-aos-delay="100">
+          <h2>WELCOME TO MyDawa Medical Clinic</h2>
+          <p>Our mission at MyDawa Medical Clinic Hospital is to provide compassionate, high-quality healthcare services to all
+            individuals in our community. We are dedicated to improving the health and well-being of our patients through innovation,
+            collaboration, and excellence in patient care.</p>
+        </div><!-- End Welcome -->
+
+        <div class="content row gy-4">
+          <div class="col-lg-4 d-flex align-items-stretch">
+            <div class="why-box" data-aos="zoom-out" data-aos-delay="200">
+              <h3>Why Choose MyDawa Medical Clinic?</h3>
+              <p>
+            MyDawa Medical Clinic, located in a vibrant city, is dedicated to providing compassionate, high-quality healthcare services to its
+                community. With 24/7 emergency care, comprehensive inpatient and outpatient services, specialized clinics, and advanced technology,
+                the hospital focuses on patient well-being and community outreach. Guided by values of integrity, compassion, and excellence,
+                MyDawa Medical Clinic strives to deliver exceptional care and promote health education and access for all.
+              </p>
+              <div class="text-center">
+                <a href="#about" class="more-btn"><span>Learn More</span> <i class="bi bi-chevron-right"></i></a>
+              </div>
+            </div>
+          </div><!-- End Why Box -->
+
+          <div class="col-lg-8 d-flex align-items-stretch">
+            <div class="d-flex flex-column justify-content-center">
+              <div class="row gy-4">
+
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box" data-aos="zoom-out" data-aos-delay="300">
+                    <i class="bi bi-clipboard-data"></i>
+                    <h4>Services:</h4>
+
+
+    <h6>Emergency Care:</h6><p> MyDawa Medical Clinic operates a 24/7 emergency department staffed by experienced physicians, nurses, and support staff, equipped to handle a wide range of medical emergencies.
+
+                  </p>
+
+                    <h6> Outpatient Services:</h6><p>Riverside General Hospital provides a variety of outpatient services, such as diagnostic imaging, laboratory testing, rehabilitation therapy, and outpatient surgery.</p>
+
+    <h6>Specialty Clinics:</h6> <p>We have specialized clinics and centers of excellence for various medical specialties, including cardiology, oncology, orthopedics, neurology, and women's health.</p>
+
+    <h6>Community Outreach:</h6> <p>Riverside General Hospital is actively involved in community outreach programs aimed at promoting health education, disease prevention, and access to healthcare services for underserved populations.</p>
+
+                  </div>
+                </div>
+                <!-- End Icon Box -->
+
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box" data-aos="zoom-out" data-aos-delay="400">
+                    <i class="bi bi-gem"></i>
+                    <h4>Inpatient Care:</h4>
+                    <p>We offer comprehensive inpatient services, including medical, surgical, obstetric, and pediatric care. Our comfortable and modern patient rooms are designed to promote healing and recovery.</p>
+                  </div>
+                </div><!-- End Icon Box -->
+
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box" data-aos="zoom-out" data-aos-delay="500">
+                    <i class="bi bi-inboxes"></i>
+                    <h4>Outpatient Services: </h4>
+                    <p>Outpatient Services: Riverside General Hospital provides a variety of outpatient services, such as diagnostic imaging, laboratory testing, rehabilitation therapy, and outpatient surgery.</p>
+                  </div>
+                </div><!-- End Icon Box -->
+
+              </div>
+            </div>
+          </div>
+        </div><!-- End  Content-->
+
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container">
+
+        <div class="row gy-4 gx-5">
+
+          <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="200">
+            <img src="{% static 'templates/assets/img/about.jpg' %}" class="img-fluid" alt="">
+            <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn"></a>
+          </div>
+
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+            <h3>About Us</h3>
+            <p>
+
+ MyDawa Medical Clinic has a dedicated team of healthcare professionals, including board-certified physicians, registered nurses, allied health professionals,
+              and support staff, committed to providing patient-centered care with compassion and integrity.
+
+            </p>
+            <ul>
+              <li>
+                <i class="fa-solid fa-vial-circle-check"></i>
+                <div>
+                  <h5>Team:</h5>
+                  <p>Technology: We leverage the latest medical technologies and equipment to deliver state-of-the-art healthcare services to our patients. Our hospital is equipped with advanced
+              diagnostic imaging systems, electronic medical records (EMR) systems, and telemedicine capabilities to enhance patient care and safety.</p>
+                </div>
+              </li>
+              <li>
+                <i class="fa-solid fa-pump-medical"></i>
+                <div>
+                  <h5>Accreditations:</h5>
+                  <p> We are proud to be accredited by national and international accrediting bodies, ensuring that we meet rigorous standards for quality and safety in healthcare
+              delivery.</p>
+                </div>
+              </li>
+              <li>
+                <i class="fa-solid fa-heart-circle-xmark"></i>
+                <div>
+                  <h5>Values:</h5>
+                  <p>At Riverside General Hospital, we uphold the values of integrity, compassion, respect, excellence, and teamwork in everything we do. We strive to create a supportive
+              and inclusive environment where patients feel valued, heard, and cared for. </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="fa-solid fa-user-doctor"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Doctors</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="fa-regular fa-hospital"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="18" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Departments</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="fas fa-flask"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Research Labs</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="fas fa-award"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="150" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Awards</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Stats Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>We Offer a wide range of medical services at MyDawa Medical Clinic to make our clients feel better again. Check them below</p>
+
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item  position-relative">
+              <div class="icon">
+                <i class="fas fa-heartbeat"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Emergency Care:</h3>
+              </a>
+              <p> Riverside General Hospital operates a 24/7 emergency department staffed by experienced physicians, nurses, and support staff, equipped
+                to handle a
+          wide range of medical emergencies.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="fas fa-pills"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Inpatient Care:</h3>
+              </a>
+              <p> We offer comprehensive inpatient services, including medical, surgical, obstetric, and pediatric care. Our comfortable and modern patient rooms are
+          designed to promote healing and recovery.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="fas fa-hospital-user"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Outpatient Services:</h3>
+              </a>
+              <p> Riverside General Hospital provides a variety of outpatient services, such as diagnostic imaging, laboratory testing, rehabilitation therapy, and
+          outpatient surgery.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="fas fa-dna"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Specialty Clinics:</h3>
+              </a>
+              <p> We have specialized clinics and centers of excellence for various medical specialties, including cardiology, oncology, orthopedics, neurology, and
+          women's health.</p>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="fas fa-wheelchair"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Community Outreach:</h3>
+              </a>
+              <p> MyDawa Medical Clinic is actively involved in community outreach programs aimed at promoting health education, disease prevention, and access
+          to healthcare services for underserved populations.</p>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="fas fa-notes-medical"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Community Outreach:</h3>
+              </a>
+              <p> Riverside General Hospital is actively involved in community outreach programs aimed at promoting health education, disease prevention, and access
+          to healthcare services for underserved populations.</p>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Appointment Section -->
+    <section id="appointment" class="appointment section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Appointment</h2>
+        <p>Would you like to book an appointment with us today for quality services? Do so now! We promise to serve you best because you are special.You are welcome</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <form action="forms/appointment.php" method="post" role="form" class="php-email-form">
+          <div class="row">
+            <div class="col-md-4 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
+            </div>
+            <div class="col-md-4 form-group mt-3 mt-md-0">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
+            </div>
+            <div class="col-md-4 form-group mt-3 mt-md-0">
+              <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone" required="">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 form-group mt-3">
+              <input type="datetime-local" name="date" class="form-control datepicker" id="date" placeholder="Appointment Date" required="">
+            </div>
+            <div class="col-md-4 form-group mt-3">
+              <select name="department" id="department" class="form-select" required="">
+                <option value="">Select Department</option>
+                <option value="Department 1">Dental Department</option>
+                <option value="Department 2">Operating Rooms (OR)</option>
+                <option value="Department 3">Diagnostic Imaging</option>
+                <option value="Department 3">Laboratory Services</option>
+                <option value="Department 3">Pharmacy</option>
+                <option value="Department 3">Rehabilitation Services</option>
+                <option value="Department 3">Nutrition and Dietary Services</option>
+                <option value="Department 3">Inpatient Units</option>
+              </select>
+            </div>
+            <div class="col-md-4 form-group mt-3">
+              <select name="doctor" id="doctor" class="form-select" required="">
+                <option value="" disabled="disabled">Select Doctor</option>
+                <option value="Doctor 1">EMILIA BAYA</option>
+                <option value="Doctor 2">BRYSON OHIO</option>
+                <option value="Doctor 3">OSTEEN BETO</option>
+                <option value="Doctor 3">DAVID GUETTA</option>
+                <option value="Doctor 3">SAMSON OSAMA</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group mt-3">
+            <label>
+              <textarea class="form-control" name="message" rows="5" placeholder="Message (Optional)"></textarea>
+            </label>
+          </div>
+          <div class="mb-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your appointment request has been sent successfully. Thank you!</div>
+          </div>
+          <div class="text-center"><button type="submit">Make an Appointment</button></div>
+        </form>
+
+      </div>
+
+    </section><!-- /Appointment Section -->
+
+    <!-- Departments Section -->
+    <section id="departments" class="departments section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Departments</h2>
+        <p>Check out the departments in our clinic,listed below</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+          <div class="col-lg-3">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" href="#departments-tab-1">Emergency Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-2">Inpatient Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-3">Rehabilitation Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-4">Pharmacy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-5">Laboratory Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-6">Diagnostic Imaging</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-7">Operating Rooms (OR)</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-8">Dental Department</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-9 mt-4 mt-lg-0">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="departments-tab-1">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Emergency Department (ED): </h3>
+                    <p class="fst-italic">Provides immediate medical care for urgent situations, including trauma, injuries, and sudden illnesses.</p>
+                    <p>Provides immediate medical care for urgent situations, including trauma, injuries, and sudden illnesses.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'templates/assets/img/departments-1.jpg' %}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="departments-tab-2">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Inpatient Units:</h3>
+                    <p class="fst-italic">Divided into medical, surgical, pediatric, obstetric, and psychiatric units, where patients receive comprehensive care requiring hospitalization.</p>
+                    <p> Divided into medical, surgical, pediatric, obstetric, and psychiatric units, where patients receive comprehensive care requiring hospitalization.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'templates/assets/img/departments-2.jpg' %}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="departments-tab-3">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Rehabilitation Services:</h3>
+                    <p class="fst-italic"> Offers physical therapy, occupational therapy, and speech therapy to aid in recovery and rehabilitation following injury or illness.</p>
+                    <p> Rehabilitation Services: Offers physical therapy, occupational therapy, and speech therapy to aid in recovery and rehabilitation following injury or illness.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'templates/assets/img/departments-3.jpg' %}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="departments-tab-4">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Pharmacy:</h3>
+                    <p class="fst-italic">  Dispenses medications prescribed by physicians and provides medication counseling to patients.</p>
+                    <p> Pharmacy: Dispenses medications prescribed by physicians and provides medication counseling to patients.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'templates/assets/img/departments-4.jpg' %}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="departments-tab-5">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Laboratory Services: </h3>
+                    <p class="fst-italic">Conducts diagnostic tests on blood, urine, tissues, and other bodily fluids to aid in disease detection, monitoring, and treatment.</p>
+                    <p>Laboratory Services: Conducts diagnostic tests on blood, urine, tissues, and other bodily fluids to aid in disease detection, monitoring, and treatment.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'templates/assets/img/departments-5.jpg' %}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="tab-pane" id="departments-tab-6">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Diagnostic Imaging: </h3>
+                    <p class="fst-italic">Provides various imaging services such as X-rays, CT scans, MRI scans, ultrasound, and mammography for diagnosis and treatment planning.</p>
+                    <p> Provides various imaging services such as X-rays, CT scans, MRI scans, ultrasound, and mammography for diagnosis and treatment planning.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'templatesassets/img/departments-5.jpg' %}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="tab-pane" id="departments-tab-7">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Operating Rooms (OR): </h3>
+                    <p class="fst-italic"> Equipped for surgical procedures, including pre-operative, intra-operative, and post-operative care.</p>
+                    <p> Equipped for surgical procedures, including pre-operative, intra-operative, and post-operative care.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'templates/assets/img/departments-5.jpg' %}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="tab-pane" id="departments-tab-8">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Dental Dept.</h3>
+                    <p class="fst-italic">The Dental Department in a hospital provides a range of oral healthcare services, including routine check-ups, treatments for dental diseases, restorative
+                      procedures, oral surgery, orthodontics, and pediatric dentistry</p>
+                    <p>. Dental professionals work to prevent and treat dental problems, restore oral health,
+                      and improve patients' overall well-being.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'templates/assets/img/departments-5.jpg' %}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Departments Section -->
+
+    <!-- Doctors Section -->
+    <section id="doctors" class="doctors section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Doctors</h2>
+        <p>These are some of our professional frontline doctors.See our Doctors</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="{% static 'templates/assets/img/doctors/doctors-1.jpg' %}" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>EMILIA BAYA</h4>
+                <span>Chief Medical Officer</span>
+                <p>Dr. Emilia Baya is a renowned pediatrician with over 30 years of experience in caring for children of all ages, from newborns to adolescents.
+She is known for her gentle demeanor and ability to establish strong rapport with both children and parents.
+Dr. Chen is committed to promoting children's health through preventive care, vaccinations, and early intervention for developmental issues.</p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""> <i class="bi bi-linkedin"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="{% static 'templates/assets/img/doctors/doctors-2.jpg' %}" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>SAMSON OSAMA</h4>
+                <span>Anesthesiologist</span>
+                <p>Dr. Samson Osama is a highly skilled cardiologist with over 20 years of experience in diagnosing and treating cardiovascular diseases.
+He is known for her expertise in interventional cardiology procedures, including angioplasty and stent placement.
+Dr. Patel is dedicated to providing compassionate care to her patients and staying up-to-date with the latest advancements in cardiology.</p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""> <i class="bi bi-linkedin"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="{% static 'templates/assets/img/doctors/doctors-3.jpg' %}" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>DAVID GUETTA</h4>
+                <span>Cardiology</span>
+                <p>Dr. David Guetta is an esteemed oncologist with extensive experience in the diagnosis and treatment of various types of cancer.
+He is recognized for his compassionate approach to patient care and his commitment to personalized treatment plans tailored to each individual.
+Dr. Nguyen is actively involved in clinical research and is passionate about exploring innovative therapies to improve cancer outcomes.</p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""> <i class="bi bi-linkedin"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="{% static 'templates/assets/img/doctors/doctors-4.jpg' %}" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>BRYSON OHIO</h4>
+                <span>Neurosurgeon</span>
+                <p>Dr. Bryson Ohio is a respected orthopedic surgeon with a specialization in sports medicine and joint replacement surgery.
+With over 25 years of experience, he has performed numerous successful surgeries to restore mobility and alleviate pain in patients with orthopedic conditions.
+Dr. Thompson is dedicated to helping his patients regain function and quality of life through comprehensive orthopedic care and rehabilitation.</p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""> <i class="bi bi-linkedin"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Doctors Section -->
+
+    <!-- Faq Section -->
+    <section id="faq" class="faq section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Frequently Asked Questions</h2>
+        <p>These are questions you may want to ask</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row justify-content-center">
+
+          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="faq-container">
+
+              <div class="faq-item faq-active">
+                <h3>FAQ: How do I schedule or cancel a follow-up appointment with a specialist?</h3>
+                <div class="faq-content">
+                  <p>   To schedule or cancel a follow-up appointment with a specialist, you can contact the hospital's scheduling department or the specialist's office directly. Be sure to have your appointment details handy, including the date and time, as well as any reference numbers or instructions provided during your initial consultation.</p>
+</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>FAQ: What should I do if I need medical attention outside of regular office hours?</h3>
+                <div class="faq-content">
+                  <p>
+
+    If you require medical attention outside of regular office hours, you can visit the hospital's emergency department (ED). The ED is open 24/7 and is equipped to handle a wide range of medical emergencies, from minor injuries to life-threatening conditions.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>FAQ: How can I request my medical records?</h3>
+                <div class="faq-content">
+                  <p>
+
+     To request your medical records, you can contact the hospital's medical records department. They will provide you with the necessary forms to fill out and guide you through the process. Depending on the hospital's policy, you may need to provide identification and sign a release form.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>FAQ: Can I bring personal belongings for a hospitalized loved one?</h3>
+                <div class="faq-content">
+                  <p>
+
+   Yes, you can bring personal belongings for a hospitalized loved one, such as clothing, toiletries, and comfort items. It's advisable to check with the hospital regarding any restrictions on specific items, such as electronics or valuables. Additionally, labeling belongings with the patient's name can help prevent loss or confusion.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>FAQ: How do I schedule or cancel a follow-up appointment with a specialist?</h3>
+                <div class="faq-content">
+                  <p>
+
+   To schedule or cancel a follow-up appointment with a specialist, you can contact the hospital's scheduling department or the specialist's office directly. Be sure to have your appointment details handy, including the date and time, as well as any reference numbers or instructions provided during your initial consultation.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>FAQ: What should I expect upon discharge from the hospital?</h3>
+                <div class="faq-content">
+                  <p>
+
+   Upon discharge from the hospital, you can expect to receive instructions from your healthcare provider regarding post-discharge care, medications, and follow-up appointments. You may also receive written discharge instructions and prescriptions. It's essential to review and follow these instructions carefully to ensure a smooth transition back to home or ongoing care. If you have any questions or concerns, don't hesitate to ask your healthcare team for clarification.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+            </div>
+
+          </div><!-- End Faq Column-->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Faq Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+
+      <div class="container">
+
+        <div class="row align-items-center">
+
+          <div class="col-lg-5 info" data-aos="fade-up" data-aos-delay="100">
+            <h3>Testimonials</h3>
+            <p>
+             "Outstanding care at MyDawa Medical Clinic! From the moment I arrived, I was impressed by the professionalism and kindness of the staff. The doctors and nurses provided expert care, and the facilities were top-notch. I highly recommend [Hospital Name] to anyone in need of medical attention. - John Smith"
+            </p>
+          </div>
+
+          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="swiper">
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  }
+                }
+              </script>
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <div class="d-flex">
+                      <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img flex-shrink-0" alt="">
+                      <div>
+                        <h3>Ptorus Isaac</h3>
+                        <h4>Ceo &amp; Founder</h4>
+                        <div class="stars">
+                          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <p>
+                      <i class="bi bi-quote quote-icon-left"></i>
+                      <span>How do I schedule or cancel a follow-up appointment with a specialist?</span>
+                      <i class="bi bi-quote quote-icon-right"></i>
+                    </p>
+                  </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <div class="d-flex">
+                      <img src="{% static 'templates/assets/img/testimonials/testimonials-2.jpg' %}" class="testimonial-img flex-shrink-0" alt="">
+                      <div>
+                        <h3>Janet Apiyo</h3>
+                        <h4>Client</h4>
+                        <div class="stars">
+                          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <p>
+                      <i class="bi bi-quote quote-icon-left"></i>
+                      <span>             "Outstanding care at MyDawa Medical Clinic! From the moment I arrived, I was impressed by the professionalism and kindness of the staff. The doctors and nurses provided expert care, and the facilities were top-notch. I highly recommend [Hospital Name] to anyone in need of medical attention. - John Smith"
+</span>
+                      <i class="bi bi-quote quote-icon-right"></i>
+                    </p>
+                  </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <div class="d-flex">
+                      <img src="{% static 'templates/assets/img/testimonials/testimonials-3.jpg' %}" class="testimonial-img flex-shrink-0" alt="">
+                      <div>
+                        <h3>Jena Karlis</h3>
+                        <h4>Store Owner</h4>
+                        <div class="stars">
+                          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <p>
+                      <i class="bi bi-quote quote-icon-left"></i>
+                      <span>             "Outstanding care at MyDawa Medical Clinic! From the moment I arrived, I was impressed by the professionalism and kindness of the staff. The doctors and nurses provided expert care, and the facilities were top-notch. I highly recommend [Hospital Name] to anyone in need of medical attention. - John Smith"
+</span>
+                      <i class="bi bi-quote quote-icon-right"></i>
+                    </p>
+                  </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <div class="d-flex">
+                      <img src="{% static 'templates/assets/img/testimonials/testimonials-4.jpg' %}" class="testimonial-img flex-shrink-0" alt="">
+                      <div>
+                        <h3>Samuel Bukoba</h3>
+                        <h4>Doctor</h4>
+                        <div class="stars">
+                          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <p>
+                      <i class="bi bi-quote quote-icon-left"></i>
+                      <span>             "Outstanding care at MyDawa Medical Clinic! From the moment I arrived, I was impressed by the professionalism and kindness of the staff. The doctors and nurses provided expert care, and the facilities were top-notch. I highly recommend [Hospital Name] to anyone in need of medical attention. - John Smith"
+</span>
+                      <i class="bi bi-quote quote-icon-right"></i>
+                    </p>
+                  </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <div class="d-flex">
+                      <img src="{% static 'templates/assets/img/testimonials/testimonials-5.jpg' %}" class="testimonial-img flex-shrink-0" alt="">
+                      <div>
+                        <h3>John Maenge</h3>
+                        <h4>Investor</h4>
+                        <div class="stars">
+                          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <p>
+                      <i class="bi bi-quote quote-icon-left"></i>
+                      <span>             "Outstanding care at MyDawa Medical Clinic! From the moment I arrived, I was impressed by the professionalism and kindness of the staff. The doctors and nurses provided expert care, and the facilities were top-notch. I highly recommend [Hospital Name] to anyone in need of medical attention. - John Smith"
+</span>
+                      <i class="bi bi-quote quote-icon-right"></i>
+                    </p>
+                  </div>
+                </div><!-- End testimonial item -->
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Gallery</h2>
+        <p>Photos of our outstanding stories,services and experiences below...we keep the memories</p>
+      </div><!-- End Section Title -->
+
+      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-0">
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{% static 'templates/assets/img/gallery/gallery-1.jpg' %}" class="glightbox" data-gallery="images-gallery">
+                <img src="{% static 'templates/assets/img/gallery/gallery-1.jpg' %}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{% static 'templates/assets/img/gallery/gallery-2.jpg' %}" class="glightbox" data-gallery="images-gallery">
+                <img src="{% static 'templates/assets/img/gallery/gallery-2.jpg' %}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{% static 'templates/assets/img/gallery/gallery-3.jpg' %}" class="glightbox" data-gallery="images-gallery">
+                <img src="{% static 'templates/assets/img/gallery/gallery-3.jpg' %}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{% static 'templates/assets/img/gallery/gallery-4.jpg' %}" class="glightbox" data-gallery="images-gallery">
+                <img src="{% static 'templates/assets/img/gallery/gallery-4.jpg' %}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{% static 'templates/assets/img/gallery/gallery-5.jpg' %}" class="glightbox" data-gallery="images-gallery">
+                <img src="{% static 'templates/assets/img/gallery/gallery-5.jpg' %}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{% static 'templates/assets/img/gallery/gallery-6.jpg' %}" class="glightbox" data-gallery="images-gallery">
+                <img src="{% static 'templates/assets/img/gallery/gallery-6.jpg' %}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{% static 'templates/assets/img/gallery/gallery-7.jpg' %}" class="glightbox" data-gallery="images-gallery">
+                <img src="{% static 'templates/assets/img/gallery/gallery-7.jpg' %}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{% static 'templates/assets/img/gallery/gallery-8.jpg' %}" class="glightbox" data-gallery="images-gallery">
+                <img src="{% static 'templates/assets/img/gallery/gallery-8.jpg' %}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Gallery Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <h3>Phone</h3>
+        <p>02 4567 346 64</p>
+        <h3>Email</h3>
+        <p>mydawamed@hotline.com</p>
+
+      </div><!-- End Section Title -->
+<h2>VISIT OUR CLINIC AT RIDGEWAYS. <br> The map below shows directions.Contact for help</h2>
+      <div class="mb-5" data-aos="fade-up" data-aos-delay="200">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.618527329727!2d36.840888595259074!3d-1.2262201272845283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f16139be2a6c1%3A0x1664a1a61305448a!2sRidgeways%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1717739656718!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>      </div><!-- End Google Maps -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>Location</h3>
+                <p>Ridgeways,Kiambu Road</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Call Us</h3>
+                <p>02 4567 346 64</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email Us</h3>
+                <p>mydawamed@hotline.com</p>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+
+          <div class="col-lg-8">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Medilab</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Ridgeways Road,Kiambu Road</p>
+            <p>Nairobi City County</p>
+            <p class="mt-3"><strong>Phone
+       <span>02 4567 346 64</span>
+              <h3>Email</h3>
+        <p>mydawamed@hotline.com</p></strong>
+
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Departments</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Dental Unit</a></li>
+            <li><a href="#">Pharmacy</a></li>
+            <li><a href="#">Specialty Clinics:</a></li>
+            <li><a href="#">Outpatient Services:</a></li>
+            <li><a href="#"> Community Outreach:</a></li>
+            <li><a href="#">Emergency Care:</a></li>
+          </ul>
+        </div>
+
+
+
+
+<!--        <div class="col-lg-2 col-md-3 footer-links">-->
+<!--          <h4>Hic solutasetp</h4>-->
+<!--          <ul>-->
+<!--            <li><a href="#">Molestiae accusamus iure</a></li>-->
+<!--            <li><a href="#">Excepturi dignissimos</a></li>-->
+<!--            <li><a href="#">Suscipit distinctio</a></li>-->
+<!--            <li><a href="#">Dilecta</a></li>-->
+<!--            <li><a href="#">Sit quas consectetur</a></li>-->
+<!--          </ul>-->
+<!--        </div>-->
+
+<!--        <div class="col-lg-2 col-md-3 footer-links">-->
+<!--          <h4>Nobis illum</h4>-->
+<!--          <ul>-->
+<!--            <li><a href="#">Ipsam</a></li>-->
+<!--            <li><a href="#">Laudantium dolorum</a></li>-->
+<!--            <li><a href="#">Dinera</a></li>-->
+<!--            <li><a href="#">Trodelas</a></li>-->
+<!--            <li><a href="#">Flexo</a></li>-->
+<!--          </ul>-->
+<!--        </div>-->
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">MyDawa Medical Clinic</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">Isco's BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'templates/assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'templates/assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'templates/assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'templates/assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'templates/assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'templates/assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+
+  <!-- Main JS File -->
+  <script src="{% static 'templates/assets/js/main.js' %}"></script>
+
+</body>
+
+</html>

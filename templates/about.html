@@ -1,0 +1,59 @@
+{% extends 'inner.html' %}
+{% block body %}
+{% load static %}
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container">
+
+        <div class="row gy-4 gx-5">
+
+          <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="200">
+            <img src="{% static 'templates/assets/img/about.jpg' %}" class="img-fluid" alt="">
+            <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn"></a>
+          </div>
+
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+            <h3>About Us</h3>
+            <p>
+
+ MyDawa Medical Clinic has a dedicated team of healthcare professionals, including board-certified physicians, registered nurses, allied health professionals,
+              and support staff, committed to providing patient-centered care with compassion and integrity.
+
+            </p>
+            <ul>
+              <li>
+                <i class="fa-solid fa-vial-circle-check"></i>
+                <div>
+                  <h5>Team:</h5>
+                  <p>Technology: We leverage the latest medical technologies and equipment to deliver state-of-the-art healthcare services to our patients. Our hospital is equipped with advanced
+              diagnostic imaging systems, electronic medical records (EMR) systems, and telemedicine capabilities to enhance patient care and safety.</p>
+                </div>
+              </li>
+              <li>
+                <i class="fa-solid fa-pump-medical"></i>
+                <div>
+                  <h5>Accreditations:</h5>
+                  <p> We are proud to be accredited by national and international accrediting bodies, ensuring that we meet rigorous standards for quality and safety in healthcare
+              delivery.</p>
+                </div>
+              </li>
+              <li>
+                <i class="fa-solid fa-heart-circle-xmark"></i>
+                <div>
+                  <h5>Values:</h5>
+                  <p>At MyDawa Medical Clinic, we uphold the values of integrity, compassion, respect, excellence, and teamwork in everything we do. We strive to create a supportive
+              and inclusive environment where patients feel valued, heard, and cared for. </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+{% endblock %}
